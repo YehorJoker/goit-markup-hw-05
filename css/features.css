@@ -1,0 +1,34 @@
+/* Делаем так, чтобы 4 колонки встали в один горизонтальный ряд */
+.features-list {
+    display: flex;
+    gap: 24px;
+}
+
+/* Рассчитываем ширину каждой из 4-х карточек, учитывая три зазора по 24px */
+.features-item {
+    width: calc((100% - 3 * 24px) / 4);
+}
+
+/* Создаем ту самую серую плашку для иконки из макета */
+.features-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+
+    border: 1px solid #8e8f99;
+    /* Отступ от серого прямоугольника до заголовка h3 */
+}
+
+/* Задаем цвет самой иконке */
+.features-icon {
+    fill: #2e2f42;
+}
+
+/* Небольшой отступ между заголовком и текстом (для идеальной геометрии) */
+.features-item .item-subtitle {
+    margin-bottom: 8px;
+}
