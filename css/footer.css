@@ -133,3 +133,7 @@
     border-color: #31d0aa;
     outline: none;
 }
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+    background-color: #31d0aa;
+}
