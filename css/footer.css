@@ -61,38 +61,12 @@
     gap: 16px;
 }
 /* Контейнер підписки */
-.footer-subscribe {
-    margin-left: 80px;
-    /* Відступ від соцмереж, як у макеті */
-}
-
-.footer-subscribe-title {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #ffffff;
-    margin-bottom: 16px;
-}
 
 .footer-subscribe-form {
     display: flex;
     gap: 24px;
 }
 
-/* Інпут підписки */
-.subscribe-input {
-    width: 264px;
-    height: 40px;
-    padding: 8px 16px;
-    border: 1px solid #ffffff;
-    border-radius: 4px;
-    background-color: transparent;
-    color: #ffffff;
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.04em;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-}
 
 /* Кнопка підписки */
 .subscribe-btn {
@@ -117,4 +91,45 @@
 .subscribe-icon {
     margin-left: 16px;
     fill: #ffffff;
+}
+.footer-subscribe {
+    margin-left: auto;
+    /* Притискає блок до правого краю */
+}
+
+.footer-subscribe-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+    margin-bottom: 16px;
+    letter-spacing: 0.02em;
+    /* Додано зауваження ментора */
+}
+.subscribe-input {
+    width: 264px;
+    height: 40px;
+    padding: 8px 16px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+    /* Додаємо transition для border-color */
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Колір плейсхолдера */
+.subscribe-input::placeholder {
+    color: #ffffff;
+}
+
+/* Стиль при фокусі */
+.subscribe-input:focus {
+    border-color: #31d0aa;
+    outline: none;
 }
